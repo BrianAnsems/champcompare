@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="champChanger.css">
+	<title>Champ Compare</title>
+	</head>
+	<body>
+		
+		<div id="topTitle"><h1>Champ Compare</h1></div>
+		<TABLE>
+			<TR>
+				<TD>
+		<div class="champBoxes">
+
+			<div id="champ-info">
+				<h2 ><a id="champ" target='_blank' href=" "></a></h2>
+				<h3 id="title" ></h3>
+				<div class="champImg">
+					<img id='champImage' src=" "/>
+				</div>
+			</div>
+			
+			<form action="demo_form.asp" id='enterChamp'>
+		  		Enter Champion Name: <input type="text" id="champID"/><br>
+		  		<input type="submit" class='lookup' value="Submit"/>
+		  	</form>
+	 		
+		</div>
+	</TD>
+	<TD>
+
+		<div class="champBoxes">
+		  	<div id="champ-info2">
+		  		<h2 ><a id="champ2" target='_blank' href=" "></a></h2>
+				<h3 id="title2" ></h3>
+				<div class="champImg">
+					<img id='champImage2' src=" "/>
+				</div>
+			</div>
+
+			<form action="demo_form.asp" id="enterChamp2">
+				Enter Champion Name: <input type="text" id="champID2"/><br>
+		  		<input type="submit" class='lookup' value="Submit"/>
+		  	</form>
+		</div>
+	</TD>
+	</TR>
+
+	</TABLE>
+		
+			<div id="statTable">
+				<TABLE id="champStats">
+					<TR>
+						<th>Characteristics</th>
+						<th id="champOneStats">First Champ Stats</th>
+						<th id="champTwoStats">Second Champ Stats</th>
+						<th id="statDifference">Stat Difference</th>
+					</TR>
+				<TR>
+					<TD>Attack Range</TD>
+					<TD id="attackrange"></TD>
+					<TD id="attackrange2"></TD>
+					<TD id="attackrangeDifference"></TD>
+				</TR>
+				<TR>
+					<TD>MP per level</TD>
+					<TD id="mpperlevel"></TD>
+					<TD id="mpperlevel2"></TD>
+					<TD id="mpperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>MP</TD>
+					<TD id="mp"></TD>
+					<TD id="mp2"></TD>
+					<TD id="mpDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Attack Damage</TD>
+					<TD id="attackdamage"></TD>
+					<TD id="attackdamage2"></TD>
+					<TD id="attackdamageDifference"></TD>
+				</TR>
+				<TR>
+					<TD>HP</TD>
+					<TD id="hp"></TD>
+					<TD id="hp2"></TD>
+					<TD id="hpDifference"></TD>
+				</TR>
+				<TR>
+					<TD>HP per level</TD>
+					<TD id="hpperlevel"></TD>
+					<TD id="hpperlevel2"></TD>
+					<TD id="hpperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Attack Damage per level</TD>
+					<TD id="attackdamageperlevel"></TD>
+					<TD id="attackdamageperlevel2"></TD>
+					<TD id="attackdamageperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Armor</TD>
+					<TD id="armor"></TD>
+					<TD id="armor2"></TD>
+					<TD id="armorDifference"></TD>
+				</TR>
+				<TR>
+					<TD>MP regen per level</TD>
+					<TD id="mpregenperlevel"></TD>
+					<TD id="mpregenperlevel2"></TD>
+					<TD id="mpregenperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>HP regen</TD>
+					<TD id="hpregen"></TD>
+					<TD id="hpregen2"></TD>
+					<TD id="hpregenDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Crit per level</TD>
+					<TD id="critperlevel"></TD>
+					<TD id="critperlevel2"></TD>
+					<TD id="critperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Spellblock per level</TD>
+					<TD id="spellblockperlevel"></TD>
+					<TD id="spellblockperlevel2"></TD>
+					<TD id="spellblockperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>MP regen</TD>
+					<TD id="mpregen"></TD>
+					<TD id="mpregen2"></TD>
+					<TD id="mpregenDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Attack speed per level</TD>
+					<TD id="attackspeedperlevel"></TD>
+					<TD id="attackspeedperlevel2"></TD>
+					<TD id="attackspeedperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Spellblock</TD>
+					<TD id="spellblock"></TD>
+					<TD id="spellblock2"></TD>
+					<TD id="spellblockDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Move speed</TD>
+					<TD id="movespeed"></TD>
+					<TD id="movespeed2"></TD>
+					<TD id="movespeedDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Attack speed off set</TD>
+					<TD id="attackspeedoffset"></TD>
+					<TD id="attackspeedoffset2"></TD>
+					<TD id="attackspeedoffsetDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Crit</TD>
+					<TD id="crit"></TD>
+					<TD id="crit2"></TD>
+					<TD id="critDifference"></TD>
+				</TR>
+				<TR>
+					<TD>HP regen per level</TD>
+					<TD id="hpregenperlevel"></TD>
+					<TD id="hpregenperlevel2"></TD>
+					<TD id="hpregenperlevelDifference"></TD>
+				</TR>
+				<TR>
+					<TD>Armor per Level</TD>
+					<TD id="armorperlevel"></TD>
+					<TD id="armorperlevel2"></TD>
+					<TD id="armorperlevelDifference"></TD>
+				</TR>
+			</Table>
+		
+		</div>
+
+
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="pageManager.js"></script>
+
+	</body>
+</html>
+
+		
