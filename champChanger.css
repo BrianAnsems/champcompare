@@ -1,0 +1,65 @@
+html {
+	height:100%;
+	margin:none;
+}
+
+body{
+	min-height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: -webkit-linear-gradient(top,grey, grey,#234567);
+	padding:4%;
+}
+
+#topTitle{
+	border:2px solid black;
+	border-radius:20%;
+	margin:auto;
+	width:300px;
+	height:75px;
+	text-align:center;
+	background-color:#456789;
+	margin-bottom:30px;
+	}
+
+.champBoxes{
+	border:black solid 2px;
+	background-color: silver;
+	padding:15px;
+	display:inline-block;
+	margin-right:10px;
+}
+
+div#champ-info > h2, div#champ-info > h3{
+	display:inline-block;
+	margin-bottom:20px;
+}
+
+div#champ-info2 > h2, div#champ-info2 > h3{
+	display:inline-block;
+	margin-bottom:20px;
+}
+
+#enterChamp, #enterChamp2{
+	font-size:20px;
+}
+#statTable{
+	margin-top:20px;
+	padding:5px;
+}
+#champStats{
+	background-color:silver;
+	border:solid black 2px;
+	border-collapse:separate;
+	border-spacing:5px 0px;
+	margin:0 auto;
+}
+#champStats tr:nth-child(odd){
+	background-color:#AFAFAF;
+}
+#champStats tr:nth-child(even){
+	background-color:silver;
+}
+
+
