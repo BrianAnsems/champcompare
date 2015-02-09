@@ -9,7 +9,7 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-image: -webkit-linear-gradient(top,grey, grey,#234567);
-	padding:4%;
+	padding:2%;
 }
 
 #topTitle{
